@@ -12,8 +12,8 @@ export default {
 
   <AppHeader></AppHeader>
 
-  <main>main</main>
-  <footer>footer</footer>
+  <main></main>
+  <footer></footer>
 </template>
 
 <style>
