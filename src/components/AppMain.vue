@@ -89,9 +89,10 @@ export default {
   <main>
     <section class="products">
       <div class="container">
+        <h2>Products</h2>
         <div class="row">
-          <div class="col" v-for="product in products">
-            <ProductCard :product="product" :src="product.src" :text="products.titolo">
+          <div class="col-12 col-md-6 col-lg-4" v-for="product in products">
+            <ProductCard :product="product" :src="product.src" :text="product.titolo">
             </ProductCard>
           </div>
         </div>
@@ -105,5 +106,10 @@ main {
   min-height: 400px;
   background-image: url("/img/fondo-pag-speciali.jpg");
   filter: opacity(90%);
+
+  & h2 {
+    filter: drop-shadow(2px 4px 6px white);
+  }
+
 }
 </style>
