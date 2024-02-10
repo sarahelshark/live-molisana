@@ -32,3 +32,7 @@ body{
   --mol-light: white;
   --mol-primary:#dbe9ff;
 }
+
+.products{
+  padding: 2rem;
+}

@@ -1,9 +1,11 @@
 <script>
 import AppHeader from './components/AppHeader.vue';
+import AppMain from './components/AppMain.vue';
 export default {
   name: "App",
   components:{
-    AppHeader
+    AppHeader,
+    AppMain,
   },
 };
 </script>
@@ -11,19 +13,12 @@ export default {
 <template>
 
   <AppHeader></AppHeader>
+  <AppMain></AppMain>
 
-  <main>
-
-
-
-  </main>
+  
   <footer></footer>
 </template>
 
 <style>
 
-main {
-  min-height: 400px;
-  background-image: url('/img/fondo-pag-speciali.jpg');
-}
 </style>
