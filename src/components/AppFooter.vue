@@ -1,20 +1,60 @@
 <script>
-
 export default {
   name: "AppFooter",
-}
+};
 </script>
 
 <template>
-
-  <footer>footer Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nemo necessitatibus veniam alias omnis tempore optio, adipisci doloribus laudantium modi sint minima aspernatur beatae quibusdam sunt dignissimos perspiciatis repudiandae! Ipsa, necessitatibus hic laboriosam repudiandae repellendus, non blanditiis sapiente iure reiciendis quos omnis. Culpa asperiores animi nihil, quibusdam accusantium voluptate, sed cumque dolorum quas dignissimos fuga incidunt recusandae cupiditate nisi odio. Amet repellat vitae, ad inventore quae nisi ut enim est cupiditate facere laudantium in animi officia tempore assumenda velit qui nobis officiis quod itaque porro illum consequatur accusa
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="logo">
+            <img src="/img/la-molisana-logo.png" alt="" />
+          </div>
+        </div>
+        <div class="col">
+          <h3>Pastificio</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Pastificio</a></li>
+            <li><a href="#">Filiera</a></li>
+            <li><a href="#">Grano</a></li>
+            <li><a href="#">100 anni</a></li>
+            <li><a href="#">Sartoria della pasta</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Prodotti</h3>
+          <ul class="list-unstyled">
+            <li><a href="#">Le classiche</a></li>
+            <li><a href="#">le speciali</a></li>
+            <li><a href="#">Le biologiche</a></li>
+            <li><a href="#">Le integrali</a></li>
+            <li><a href="#">Le gluten-free</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
 
 <style scoped>
-
 footer {
-    background-color: var(--mol-light);
-    min-height: 400px;
+  background-color: var(--mol-light);
+  background-image: url("/img/footer-montagne-bottom.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  & h3 {
+    color: var(--mol-secondary);
+    margin-bottom: 1rem;
+  }
+
+  & ul.list-unstyled {
+    & a {
+      text-decoration: none;
+      color: var(--mol-dark);
+    }
+  }
 }
 </style>

@@ -19,6 +19,7 @@
 .col{
   width: auto;
   flex-basis: auto;
+  flex-grow: 1;
   padding: 1rem;
 }
 
