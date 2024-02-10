@@ -7,15 +7,15 @@ export default {
         return {
             products: [
                 {
-                    src: "https://picsum.photos/400/200",
+                    src: "https://picsum.photos/200/200",
                     text: "Pasta name 1",
                 },
                 {
-                    src: "https://picsum.photos/400/200",
+                    src: "https://picsum.photos/200/200",
                     text: "Pasta name 2",
                 },
                 {
-                    src: "https://picsum.photos/400/200",
+                    src: "https://picsum.photos/200/200",
                     text: "Pasta name 3",
                 },
             ],
@@ -31,7 +31,8 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col" v-for="product in products">
-            <ProductCard :product="product"></ProductCard> <!--props products pr passare costante nella componente -->
+            <ProductCard :product="product"></ProductCard> <!--props products pr passare costante nella componente
+            opzione 2 <ProductCard :product="product" :src="product.src :text="product.text"></ProductCard -->
           </div>
 
         </div>

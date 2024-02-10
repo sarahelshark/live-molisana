@@ -3,7 +3,9 @@ export default {
   name: "ProductCard",
   props: {
     /*props:['product'],*/
-    product: Object
+    product: Object,
+    /*src:String,
+    text:String,  opzione 2 */
   }
 };
 </script>
@@ -11,6 +13,10 @@ export default {
   <div class="product">
     <img :src="product.src" alt="random img" />
     <h3>{{ product.text }}</h3>
+    <!--opzione 2 
+     <img :src='src' alt=''/>>
+    <h3>{{ text
+    -->
   </div>
 </template>
 <style></style>
