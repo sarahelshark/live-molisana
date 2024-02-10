@@ -2,21 +2,15 @@
 export default {
   name: "ProductCard",
   props: {
-    /*props:['product'],*/
-    product: Object,
-    /*src:String,
-    text:String,  opzione 2 */
+    src:String,
+    text:String, 
   }
 };
 </script>
 <template>
   <div class="product">
-    <img :src="product.src" alt="random img" />
-    <h3>{{ product.text }}</h3>
-    <!--opzione 2 
-     <img :src='src' alt=''/>>
-    <h3>{{ text
-    -->
+    <img :src='src' alt=''/>
+    <h3>{{ text}}</h3>
   </div>
 </template>
 <style></style>
