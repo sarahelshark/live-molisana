@@ -1,6 +1,10 @@
 <script>
+import AppLogo from "./AppLogo.vue";
 export default {
   name: "AppFooter",
+  components: {
+    AppLogo,
+  },
 };
 </script>
 
@@ -9,9 +13,7 @@ export default {
     <div class="container">
       <div class="row">
         <div class="col">
-          <div class="logo">
-            <img src="/img/la-molisana-logo.png" alt="" />
-          </div>
+          <AppLogo></AppLogo>
         </div>
         <div class="col">
           <h3>Pastificio</h3>
