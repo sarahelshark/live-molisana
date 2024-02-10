@@ -1,26 +1,50 @@
 <script>
+import ProductCard from './ProductCard.vue';
+
 export default {
-  name: "AppMain", 
-}
+    name: "AppMain",
+    data() {
+        return {
+            products: [
+                {
+                    src: "https://picsum.photos/400/200",
+                    text: "Pasta name 1",
+                },
+                {
+                    src: "https://picsum.photos/400/200",
+                    text: "Pasta name 2",
+                },
+                {
+                    src: "https://picsum.photos/400/200",
+                    text: "Pasta name 3",
+                },
+            ],
+        };
+    },
+    components: { ProductCard }
+};
 </script>
 
 <template>
   <main>
     <section class="products">
-       <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo aspernatur odio quidem nemo ea est! Repellendus voluptate, maxime id, consequuntur fugit numquam dolores vero modi corrupti quaerat repellat voluptatibus praesentium? Nisi doloribus eligendi nam ex ipsa! Quisquam sint repudiandae commodi in et enim accusamus, ratione, fugiat culpa dolorem asperiores qui.
-       </div>
-    </section>
+      <div class="container">
+        <div class="row">
+          <div class="col" v-for="product in products">
+            <ProductCard :product="product"></ProductCard> <!--props products pr passare costante nella componente -->
+          </div>
 
+        </div>
+        
+      </div>
+    </section>
   </main>
 </template>
 
 <style scoped>
-
 main {
   min-height: 400px;
-  background-image: url('/img/fondo-pag-speciali.jpg');
-  filter:opacity(90%);
-  
+  background-image: url("/img/fondo-pag-speciali.jpg");
+  filter: opacity(90%);
 }
 </style>
