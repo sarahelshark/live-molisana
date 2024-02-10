@@ -24,14 +24,20 @@
 }
 
 body{
-  font-family: sans-serif ;
+  font-family: 'Montserrat', sans-serif ;
   background-color: #ededed;
 }
+.list-unstyled{
+list-style: none;
+}
+
+
 
 :root{
   --mol-dark:#333;
   --mol-light: white;
   --mol-primary:#dbe9ff;
+  --mol-secondary: #0b2d6b;
 }
 
 .products{
