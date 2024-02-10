@@ -1,0 +1,10 @@
+body{
+  font-family: sans-serif ;
+  background-color: #ededed;
+}
+
+:root{
+  --mol-dark:#333;
+  --mol-light: white;
+  --mol-primary:#dbe9ff;
+}
