@@ -12,10 +12,18 @@ export default {
 
   <AppHeader></AppHeader>
 
-  <main></main>
+  <main>
+
+
+
+  </main>
   <footer></footer>
 </template>
 
 <style>
 
+main {
+  min-height: 400px;
+  background-image: url('/img/fondo-pag-speciali.jpg');
+}
 </style>
